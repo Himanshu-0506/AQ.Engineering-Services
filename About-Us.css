@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;600&family=Montserrat+Alternates:wght@500&family=Nunito:wght@500&family=Rajdhani:wght@500&family=Roboto:wght@300;500&display=swap');
+
+*{
+  margin: 10px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body
+{
+  font-family: 'Roboto', sans-serif;
+  margin-right: 500px;
+  margin-left: 40px;
+}

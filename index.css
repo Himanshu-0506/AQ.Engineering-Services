@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;600&family=Montserrat+Alternates:wght@500&family=Nunito:wght@500&family=Rajdhani:wght@500&family=Roboto:wght@300;500&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* NAVBAR SECTION */
@@ -126,6 +129,41 @@
   border-radius: 20px;
 }
 
+/* FOOTER SECTION */
+
+.footer-section{
+  background-color: #888888;
+  height: 400px;
+  padding: 20px;
+  line-height: 1.5rem;
+}
+
+.footer-section ul{
+  list-style: none;
+}
+
+.footer-container{
+  max-width: 1117px;
+  margin: auto;
+}
+
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
 
 
 
