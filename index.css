@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+/* NAVBAR SECTION */
+
 .navbar{
     background-color: white;
     padding: 0 4rem;
@@ -24,12 +26,14 @@
   cursor: pointer;
 }
 
+/* HERO SECTION */
+
 .hero-container{
   background-color:#888888;
   text-align: center;
   color: white;
-  height: 680px;
-  background-image: url(./images/background.jpeg);
+  height: 720px;
+  background-image: url(./images/main-background.jpeg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -45,6 +49,8 @@
   margin-bottom: 10px;
 }
 
+/* SERVICES SECTION */
+
 .service-section{
   text-align: center;
 }
@@ -53,12 +59,13 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  flex-direction: row;
   margin-top: 20px;
 }
 
 .Card {
-  width: 400px;
-  height: 300px;
+  width: 300px;
+  height: 250px;
   background: linear-gradient(to right,rgb(165, 165, 165),rgb(134, 134, 134));
   display: flex;
   flex-direction: column;
@@ -66,20 +73,58 @@
   justify-content: center;
   gap: 20px;
   padding: 20px;
-  /* position: relative; */
   overflow: hidden;
   color: white;
   border-radius: 30px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
   padding: 20px;
-  /* margin-bottom: 20px; */
 }
 
 #card-id{
-  margin-top: 300px;
+  margin-top: 200px;
 }
 
+/* COLAB SECTION */
+
+.colab-section{
+  margin-top: 20px;
+  height: 700px;
+  background-color: skyblue;
+}
+
+/* CONTACT SECTION */
+
+.contact-section{
+  height: 420px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: darkgray;
+}
+
+.address{
+  position: relative;
+  left: 10%;
+}
+
+.address h1{
+  margin-bottom: 10px;
+  font-size: 38px;
+}
+
+.address p{
+  font-size: 20px;
+}
+
+.location{
+  position: relative;
+  right: 5%;
+}
+
+.location iframe{
+  border-radius: 20px;
+}
 
 
 
