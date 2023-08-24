@@ -29,6 +29,10 @@
   text-align: center;
   color: white;
   height: 680px;
+  background-image: url(./images/background.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero-content{
@@ -62,13 +66,18 @@
   justify-content: center;
   gap: 20px;
   padding: 20px;
-  position: relative;
+  /* position: relative; */
   overflow: hidden;
   color: white;
   border-radius: 30px;
   margin-left: 50px;
   margin-right: 50px;
   padding: 20px;
+  /* margin-bottom: 20px; */
+}
+
+#card-id{
+  margin-top: 300px;
 }
 
 
