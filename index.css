@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;600&family=Montserrat+Alternates:wght@500&family=Nunito:wght@500&family=Rajdhani:wght@500&family=Roboto:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;600&family=Montserrat+Alternates:wght@500&family=Nunito:wght@500&family=Rajdhani:wght@500&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 *{
   margin: 0;
@@ -60,16 +60,19 @@
 
 .cards{
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: row;
-  margin-top: 20px;
+  align-items: center;
+  /* margin-left: 22%;
+  margin-right: 15%; */
+  margin: 5% 15% 5% 22%;
+  gap: 20px;
 }
 
 .Card {
-  width: 300px;
-  height: 250px;
-  background: linear-gradient(to right,rgb(165, 165, 165),rgb(134, 134, 134));
+  width: 200px;
+  height: 150px;
+  background: linear-gradient(to right,rgb(142, 142, 142),rgb(169, 169, 169));
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -77,23 +80,39 @@
   gap: 20px;
   padding: 20px;
   overflow: hidden;
-  color: white;
-  border-radius: 30px;
-  margin-left: 100px;
-  margin-right: 100px;
-  padding: 20px;
-}
-
-#card-id{
-  margin-top: 200px;
+  color: rgb(0, 0, 0);
+  border-radius: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /* COLAB SECTION */
 
 .colab-section{
   margin-top: 20px;
-  height: 700px;
+  height: 500px;
   background-color: skyblue;
+}
+
+.colab-section h1{
+  text-align: center;
+  padding-top: 20px
+}
+
+.logos{
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px 0 10px;
+}
+
+.logo img{
+    width: 150px;
+    height: 100px;
+    /* aspect-ratio: 3/2; */
+    object-fit: contain;
+    background-color: #f0f0f0;
 }
 
 /* CONTACT SECTION */
@@ -133,7 +152,7 @@
 
 .footer-section{
   background-color: #888888;
-  height: 400px;
+  height: 300px;
   padding: 20px;
   line-height: 1.5rem;
 }
