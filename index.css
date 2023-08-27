@@ -69,44 +69,67 @@
 
 /* SERVICES SECTION */
 
-.service-section{
+.service-section {
   text-align: center;
+  padding: 50px 0;
 }
-
-.service-section h1{
-  font-weight: 300;
-  margin-top: 20px;
-}
-
 .parent-card{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  /* padding: 20px 300px; */
-  /* width: 400px; */
+  /* padding: 20px 300px;
+  width: 400px; */
   margin: 20px 400px;
-  gap: 20px;
+  gap: 40px;
 }
+
+/* .parent-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 20px 400px;
+} */
 
 .child-card {
   width: 200px;
-  height: 150px;
-  background: linear-gradient(to right,rgb(142, 142, 142),rgb(169, 169, 169));
-  display: flex;
-  flex-direction: column;
-  width: 200px;
-  background: linear-gradient(to right,rgb(142, 142, 142),rgb(169, 169, 169));
+  height: 170px;
+  position: relative;
   padding: 20px;
-  gap: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
   overflow: hidden;
-  color: rgb(0, 0, 0);
-  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
+
+.child-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('images/Electrical.jpeg');
+  /* filter: blur(px); */
+  z-index: -1; 
+}
+
+.child-card p:first-child {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.child-card p:last-child {
+  font-size: 14px;
+  margin-top: 15px;
+} 
 
 @media (min-width:320px) and (max-width:1245px) {
 
-  .cards{
+  .child-card{
     margin: 20px 40px;
   }
 }
@@ -187,7 +210,6 @@
 
 .footer-section{
   background-color: lightblue;
-
   height: auto;
   padding: 20px;
   line-height: 1.5rem;
@@ -203,8 +225,8 @@
 }
 
 .footer-row{
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .footer-col{
