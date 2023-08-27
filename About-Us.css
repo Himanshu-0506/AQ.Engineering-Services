@@ -14,8 +14,21 @@ body
 }
 
 .aboutus-content{
-  padding: 20px 800px 50px 50px;
-  line-height: 1.75rem;
+  padding: 20px 350px 50px 350px;
+  line-height: 2.5rem;
+  text-align: center;
+}
+
+.aboutus-content li{
+  list-style: none;
+}
+
+.aboutus-content ul p{
+  padding: 0 200px 0 200px;
+}
+
+.aboutus-content h2{
+  margin-bottom: 10px;
 }
 
 .nav-bar{
