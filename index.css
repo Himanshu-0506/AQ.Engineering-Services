@@ -81,25 +81,31 @@
 .cards{
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   align-items: center;
-  padding: 5% 20% 5% 29%;
+  justify-content: center;
+  /* padding: 20px 300px; */
+  /* width: 400px; */
+  margin: 20px 400px;
   gap: 20px;
 }
 
 .Card {
-  width: 200px;
-  height: 150px;
-  background: linear-gradient(to right,rgb(142, 142, 142),rgb(169, 169, 169));
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 20px;
+  width: 200px;
+  background: linear-gradient(to right,rgb(142, 142, 142),rgb(169, 169, 169));
   padding: 20px;
+  gap: 20px;
   overflow: hidden;
   color: rgb(0, 0, 0);
   border-radius: 15px;
+}
+
+@media (min-width:320px) and (max-width:1245px) {
+
+  .cards{
+    margin: 20px 40px;
+  }
 }
 
 /* COLAB SECTION */
