@@ -89,14 +89,10 @@
   gap: 20px;
 }
 
-<<<<<<< HEAD
 .child-card {
   width: 200px;
   height: 150px;
   background: linear-gradient(to right,rgb(142, 142, 142),rgb(169, 169, 169));
-=======
-.Card {
->>>>>>> d58207b3ea429c98fcf2b260d72e5c543d3482e2
   display: flex;
   flex-direction: column;
   width: 200px;
