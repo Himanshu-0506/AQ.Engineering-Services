@@ -31,11 +31,15 @@
   cursor: pointer;
   font-weight: 300;
   font-size: 20px;
-  transition: ease-in;
+  transition: ease-in 0.1s;
 }
 .navbar li:hover{
   scale: 110%;
 }
+
+/* .navbar li:hover{
+  color: #5dc1ff;;
+} */
 
 #about-us{
   margin-right: 20px;
@@ -69,10 +73,6 @@
   text-align: center;
   color: black;
   height: 100vh;
-  /* background-image: url(./images/bg.jpeg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; */
 }
 
 .hero-container::before{
@@ -95,13 +95,37 @@
 }
 
 .hero-content h2{
-  font-size: 30px;
+  font-size: 35px;
   margin-bottom: 20px;
+}
+
+.hero-content p{
+  font-size: 19px;
+}
+
+.hero-content button{
+  padding: 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: #24a0ed;
+  border: none;
+}
+
+.hero-content button:hover{
+  cursor: pointer;
+  box-shadow: rgb(255, 255, 255);
+}
+
+.hero-container a{
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
 }
 
 @media (max-width: 480px) {
   .hero-content{
-    top: 40%;
+    top: 20%;
     padding: 30px;
   }
   .hero-content p{
@@ -109,11 +133,18 @@
   }
 }
 
+@media (max-width: 650px) {
+  .hero-content{
+  top: 20%;
+  }
+}
+
 /* SERVICES SECTION */
 
 .service-section {
   text-align: center;
-  padding: 50px 0;
+  padding: 30px 0;
+  background-color: #5dc1ff;
 }
 .parent-card{
   display: flex;
@@ -126,13 +157,6 @@
   gap: 40px;
 }
 
-/* .parent-card {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin: 20px 400px;
-} */
-
 .child-card {
   width: 200px;
   height: 170px;
@@ -142,8 +166,10 @@
   border-radius: 8px;
   overflow: hidden;
   background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   text-align: center;
+  cursor: pointer;
+  transition: all ease 0.3s;
 }
 
 .child-card::before {
@@ -168,6 +194,12 @@
   font-size: 14px;
   margin-top: 15px;
 } 
+
+.child-card:hover{
+  width: 220px;
+  height:190px;
+  
+}
 
 @media (min-width:320px) and (max-width:900px) {
 
@@ -218,7 +250,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: darkgray; */
+  padding: 50px;
+  background-color: #5dc1ff;
 }
 
 .address{
@@ -313,8 +346,9 @@
   font-size: 18px;
   color: #ffffff;
   text-transform: capitalize;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   font-weight: 500;
+  color:#5dc1ff;
 }
 
 
@@ -334,7 +368,6 @@
   .footer-col h4{
     margin-top: 10px;
     margin-bottom: 10px;
-
   }
   .footer-col{
     width: auto
