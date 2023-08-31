@@ -28,7 +28,6 @@
 .navbar li{
   list-style: none;
   display: inline-block;
-  margin-right: 50px;
   font-size: 22px;
   cursor: pointer;
   font-weight: 300;
@@ -39,9 +38,29 @@
   scale: 110%;
 }
 
+#about-us{
+  margin-right: 20px;
+}
+
+
 .navbar li a {
   text-decoration: none;
   color: black;
+}
+
+@media (min-width:300px) and (max-width:900px) {
+
+  .navbar{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .navbar li{
+    font-size: 15px;
+
+  }
+  #about-us{ 
+    display: none;
+  }
 }
 
 /* HERO SECTION */
@@ -127,9 +146,9 @@
   margin-top: 15px;
 } 
 
-@media (min-width:320px) and (max-width:1245px) {
+@media (min-width:320px) and (max-width:900px) {
 
-  .child-card{
+  .parent-card{
     margin: 20px 40px;
   }
 }
@@ -181,8 +200,9 @@
 
 .address{
   position: relative;
-  left: 10%;
+  margin-left: 8rem;
   font-weight: 300;
+  margin-bottom: 30px;
 }
 
 .address h1{
@@ -205,12 +225,35 @@
   border-radius: 20px;
 }
 
+@media (min-width:320px) and (max-width:900px) {
+  .contact-section{
+    flex-direction: column;
+  }
+  .address{
+    margin-left: 1rem;
+  }
+  .address h1{
+    font-size: 1.5rem;
+  }
+  .address p{
+    font-size: 1rem;
+  }
+  .location{
+    right: 0%;
+    margin-bottom: 50px;
+  }
+  .location iframe{
+    width: 230px;
+    height: 230px;
+  }
+}
+
 /* FOOTER SECTION */
 
 .footer-section{
-  background-color: lightblue;
+  background-color: #252525;
   height: auto;
-  padding: 20px;
+  padding: 20px 0px;
   line-height: 1.5rem;
 }
 
@@ -220,7 +263,7 @@
 
 .footer-container{
   max-width: 1117px;
-  margin: auto;
+  margin-left: 8rem;
 }
 
 .footer-row{
@@ -230,13 +273,20 @@
 
 .footer-col{
   width: 25%;
-  padding: 0 15px;
 }
 
 .footer-col li a{
   text-decoration: none;
-  color: black;
+  color: white;
 }
+
+.social-links a{
+  text-decoration: none;
+  color: white;
+}
+
+
+
 
 .footer-col h4{
   font-size: 18px;
@@ -259,5 +309,30 @@
     padding: 0 15px;
   }
 }
+
+@media (min-width:320px) and (max-width:900px) {
+  .footer-container{
+    margin-left: 0rem;
+    /* max-width: 300px; */
+
+  }
+  .footer-row{
+    display: flex;
+    flex-direction: column;
+    align-items: start; 
+    margin-left: 60px;
+    /* width: 100%; */
+    /* flex-wrap: nowrap; */
+  }
+  .footer-col h4{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+  }
+  .footer-col{
+    width: auto
+  }
+}
+
 
 
