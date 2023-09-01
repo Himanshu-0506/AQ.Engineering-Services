@@ -13,15 +13,21 @@
     padding-left: 8rem;
     padding-right: 2rem;
     width: 100%;
-    height: 60px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
-    background-color:transparent;
-    backdrop-filter: blur(20px);
+    background-color: white;
+    backdrop-filter: blur(30px);
     position: fixed;
     z-index: 100;
+}
+
+.company-logo img {
+  max-width: 100px; 
+  height: auto; 
+  cursor: pointer;
 }
 
 .navbar li{
@@ -33,18 +39,14 @@
   font-size: 20px;
   transition: ease-in 0.1s;
 }
+
 .navbar li:hover{
   scale: 110%;
 }
 
-/* .navbar li:hover{
-  color: #5dc1ff;;
-} */
-
 #about-us{
   margin-right: 20px;
 }
-
 
 .navbar li a {
   text-decoration: none;
@@ -121,6 +123,12 @@
   color: white;
   text-decoration: none;
   font-size: 15px;
+}
+
+@media (min-width: 450px ) {
+  .hero-content button{
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
@@ -208,10 +216,52 @@
   }
 }
 
+/* IMAGE SECTION */
+
+.image-section{
+  height: 600px;
+  background-color: #5dc1ff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+swiper-container {
+  width: 60%;
+  height: 100%;
+  margin-left: 20%;
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width:750px) {
+  .image-section{
+    height: 400px;
+  }
+  swiper-container{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+}
+
 /* COLAB SECTION */
 
 .colab-section{
-  margin-top: 20px;
+  margin-top: 50px;
   margin-bottom: 100px;
   height: auto;
 }
@@ -230,8 +280,6 @@
   flex-wrap: wrap;
   gap: 10px;
   align-items: center;
-
-  /* padding: 0 10px 0 10px; */
 }
 
 .logo img{
@@ -240,7 +288,52 @@
     /* aspect-ratio: 3/2; */
     object-fit: contain;
     mix-blend-mode: multiply;
+}
 
+/* Founders Section */
+
+.founder-Section{
+  height: 400px;
+}
+
+.founders{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+}
+
+.founder-Section #Leaders {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.director, .manager{
+  text-align: center;
+}
+
+.director a, .manager a{
+  text-decoration: none;
+}
+
+.director img, .manager img{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+@media (max-width:600px) {
+  .founders{
+    gap: 50px;
+  }
+}
+
+@media (max-width: 450px) {
+  .founder-Section{
+    height: 750px;
+  }
 }
 
 /* CONTACT SECTION */
@@ -270,6 +363,11 @@
 .address p{
   font-size: 20px;
   font-weight: 300;
+}
+
+.address p a{
+  text-decoration: none;
+  color: black;
 }
 
 .location{
