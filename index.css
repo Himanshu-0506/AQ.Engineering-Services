@@ -244,7 +244,7 @@ swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50px;
+  border-radius: 20px;
 }
 
 .mySwiper .swiper-pagination-bullet {
@@ -267,6 +267,10 @@ swiper-slide img {
     width: 100%;
     height: 100%;
     margin: 0;
+    padding: 5px;
+  }
+  swiper-slide, swiper-slide img{
+    border-radius: 10px;
   }
 }
 
@@ -331,6 +335,7 @@ swiper-slide img {
   color: #0392DF;
 }
 
+
 .director img, .manager img{
   width: 200px;
   height: 200px;
@@ -371,7 +376,7 @@ swiper-slide img {
 
 .address h1{
   /* margin-bottom: 10px; */
-  font-size: 38px;
+  font-size: 28px;
   font-weight: 300;
 }
 
@@ -409,11 +414,11 @@ swiper-slide img {
   }
   .location{
     right: 0%;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
   .location iframe{
-    width: 230px;
-    height: 230px;
+    width: 250px;
+    height: 250px;
   }
 }
 
