@@ -301,7 +301,7 @@ swiper-slide img {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 200px;
+  gap: 150px;
 }
 
 .founder-Section #Leaders {
@@ -319,8 +319,8 @@ swiper-slide img {
 }
 
 .director img, .manager img{
-  height: 200px;
   width: 200px;
+  height: 200px;
   border-radius: 50%;
 }
 
@@ -332,7 +332,8 @@ swiper-slide img {
 
 @media (max-width: 450px) {
   .founder-Section{
-    height: 750px;
+    height: auto;
+    padding-bottom: 50px;
   }
 }
 
@@ -394,7 +395,7 @@ swiper-slide img {
   }
   .location{
     right: 0%;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
   .location iframe{
     width: 230px;
@@ -459,7 +460,7 @@ swiper-slide img {
     display: flex;
     flex-direction: column;
     align-items: start; 
-    margin-left: 60px;
+    margin-left: 30px;
     /* width: 100%; */
     /* flex-wrap: nowrap; */
   }
