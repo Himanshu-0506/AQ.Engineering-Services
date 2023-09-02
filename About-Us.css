@@ -62,5 +62,10 @@ cursor: pointer;
     text-align: start;
   }
 
+  
+.nav-bar{
+  padding-left: 1rem;
+}
+
 }
 
