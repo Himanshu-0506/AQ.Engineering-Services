@@ -86,9 +86,6 @@
   height: 100%;
   background-image: url('images/bg.jpeg');
   filter: blur(2px);
-  /* z-index: -1;  */
-  /* background-size: cover;
-  background-repeat: no-repeat;  */
 }
 
 .hero-content{
@@ -461,7 +458,6 @@ swiper-slide img {
   color: white;
 }
 
-
 .footer-col h4{
   font-size: 18px;
   color: #ffffff;
@@ -470,7 +466,6 @@ swiper-slide img {
   font-weight: 500;
   color:#0392DF;
 }
-
 
 @media (min-width:320px) and (max-width:900px) {
   .footer-container{
