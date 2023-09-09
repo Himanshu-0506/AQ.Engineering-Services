@@ -71,7 +71,6 @@
 /* HERO SECTION */
 
 .hero-container{
-  background-color:#888888;
   text-align: center;
   color: black;
   height: 100vh;
@@ -130,6 +129,18 @@
 }
 
 @media (max-width: 480px) {
+
+    .hero-section{
+      height: 80vh;
+    }
+   
+    .hero-container::before{
+      width: 100%;
+      height: 80%;
+      background-image: url('images/bg.jpeg');
+      filter: blur(2px);
+    }
+
   .hero-content{
     top: 20%;
     padding: 30px;
