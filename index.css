@@ -389,14 +389,14 @@ swiper-slide img {
   color: rgb(255, 252, 252);
 }
 
-.location{
+/* .location{
   position: relative;
   right: 5%;
 }
 
 .location iframe{
   border-radius: 20px;
-}
+} */
 
 @media (min-width:320px) and (max-width:900px) {
   .contact-section{
@@ -412,14 +412,14 @@ swiper-slide img {
   .address p{
     font-size: 1rem;
   }
-  .location{
+  /* .location{
     right: 0%;
     margin-bottom: 10px;
   }
   .location iframe{
     width: 250px;
     height: 250px;
-  }
+  } */
 }
 
 /* FOOTER SECTION */
