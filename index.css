@@ -507,8 +507,8 @@ swiper-slide img {
   bottom: 10px; /* Adjust the distance from the bottom as needed */
   right: 10px; /* Adjust the distance from the right as needed */
   z-index: 1000; /* Ensure it's above other content */
-  background-color: #25d366; /* Set your preferred background color */
-  padding: 10px; /* Add padding to create some space around the icon */
+  background-color: #25D366; /* Set your preferred background color */
+  padding: 12px; /* Add padding to create some space around the icon */
   border-radius: 50%; /* Create a circular background shape */
 }
 .whatsapp-container:hover {
@@ -516,6 +516,7 @@ swiper-slide img {
 }
 
 .whatsapp-container i {
+  color: white;
   font-size: 2rem; /* Adjust the icon size as needed */
    /* Adjust the icon color as needed */
 }
